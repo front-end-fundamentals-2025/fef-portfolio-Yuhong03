@@ -1,7 +1,6 @@
 body {
     margin:0;
     padding:0;
-    font-family: sans-serif;
 } 
 
 .background img{
@@ -51,6 +50,7 @@ body {
 
 .info h1 {
     font-weight: lighter;
+    font-family: "Julius Sans One", serif;
     color: rgb(230, 240, 250);
     font-size: 40px;
 }
@@ -60,7 +60,8 @@ body {
     width: auto;
     max-width: 500px;
     color: rgb(230, 240, 250);
-    font-size:20px;
+    font-family: "Onest", serif;
+    font-size: 18px;
     line-height:1.5;
     margin-bottom:40px;
 }
@@ -76,7 +77,7 @@ body {
 .projects-button, .contact-button {
     color: #c1def7;
     font-size: 20px;
-    font-family: Verdana, sans-serif;
+    font-family: "Onest", serif;
     text-align: center;
     border: 1px solid #c1def7;
     padding: 10px 20px;
@@ -95,7 +96,7 @@ a:hover {
 
 .copyright {
     position: fixed;
-    font-size: 15px;
+    font-size: 13px;
     color: #c1def7;
     left: 50%;
     transform: translateX(-50%);

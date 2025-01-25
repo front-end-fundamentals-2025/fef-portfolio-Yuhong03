@@ -7,13 +7,13 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 50px;
+    padding: 55px;
 }
 
 .header-container h1 {
     color: rgb(81, 80, 79);
-    font-family: cursive;
-    font-size: 3em;
+    font-family: "Julius Sans One", serif;
+    font-size: 2.5em;
     margin: 0;
 }
 
@@ -70,7 +70,7 @@ a {
     color: black;
     font-weight: bold;
     font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Zen Kaku Gothic New", serif;
     text-decoration: none;
 }
 
@@ -128,10 +128,9 @@ a {
     position: relative;
     margin-bottom: 20px;
     left:50%;
-    font-family: Verdana, sans-serif;
+    font-family: "Onest", serif;
     transform: translateX(-50%);
     color: #000000;
-
     text-align: center;
     border: 2.5px solid #000000;
     padding: 10px 20px;
@@ -163,7 +162,7 @@ footer {
 
 .copyright {
     position: relative;
-    font-size: 15px;
+    font-size: 13px;
     color: #888686;
     left: 50%;
     transform: translateX(-50%);
@@ -172,6 +171,6 @@ footer {
 
 @media screen and (max-width: 300px) {
     .copyright {
-        font-size: 11px;
+        font-size: 10px;
     }
 }

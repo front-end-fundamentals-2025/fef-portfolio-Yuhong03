@@ -114,7 +114,6 @@ body {
 .contact-form label {
     display: inline-block;
     padding:5px;
-
 }
 
 .contact-form input,
@@ -141,7 +140,7 @@ body {
     position:fixed;
     bottom: 100px;
     left:50%;
-    font-family: Verdana, sans-serif;
+    font-family: "Onest", serif;
     transform: translateX(-50%);
     color: #ffffff;
     font-size: 20px;
@@ -155,14 +154,14 @@ body {
 
 .home-button:hover {
    background-color: #ffffff;
-   color: #2eb499;
+   color: #2ba68d;
    transition: background-color 0.2s ease;
 }
 
 .copyright {
     position: absolute;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
     color: #c9daea;
     left: 50%;
     transform: translate(-50%, -50%);
