@@ -25,7 +25,7 @@ body {
 }
 
 .photo img {
-    position: relative;
+    display: block;
     left: 10%;
     top: 30px;
     border-radius: 60%;
@@ -35,8 +35,9 @@ body {
 }
 
 .profile {
-    display:flex;
     position: fixed;
+    display:flex;
+    align-items: center;
     justify-content: center;
     margin-top:50px;
     width: 100%;
@@ -64,6 +65,55 @@ body {
     font-size: 18px;
     line-height:1.5;
     margin-bottom:40px;
+}
+
+hr {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+        align-items: center;
+        flex-direction: column;
+    }
+    .photo img {
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+    }
+    #intro {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .info {
+        margin-left: 0;
+    }
+    .info h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .info p {
+        position: fixed;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 90%;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    hr {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info p {
+        font-size: 13px;
+    }
+    hr {
+        width: 60%;
+    }
 }
 
 .button-container {
@@ -95,6 +145,7 @@ a:hover {
 }
 
 .copyright {
+    display: inline-block;
     position: fixed;
     font-size: 13px;
     color: #c1def7;
@@ -102,4 +153,5 @@ a:hover {
     transform: translateX(-50%);
     text-align: center;
     bottom: 1px;
+    width: 100%;
 }

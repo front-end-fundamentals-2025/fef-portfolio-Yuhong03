@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: 60vh;
-    background-color: black;
+    background-color: #6c5e2a;
     color: #e5e4e4;
     padding: 20px;
 }
@@ -38,6 +38,7 @@ body {
     height: auto;
     max-height: 50vh;
     border-radius: 30px;
+    padding: 5px;
 }
 
 @media (max-width: 768px) {
@@ -66,6 +67,7 @@ body {
     font-family: "Julius Sans One", serif;
     font-weight: bold;
     font-size: 1.7em;
+    color: #6c5e2a;
 }
 
 .info {
@@ -80,6 +82,7 @@ body {
     margin-top: 15px;
     margin-left: 10px;
     line-height: 1em;
+    color: #6c5e2a;
 }
 
 .intro {
@@ -111,10 +114,10 @@ body {
     left:50%;
     font-family: "Onest", serif;
     transform: translateX(-50%);
-    color: #000000;
+    color: #6c5e2a;
     font-size: 1.2em;
     text-align: center;
-    border: 2.5px solid #000000;
+    border: 2.5px solid #6c5e2a;
     padding: 10px 20px;
     text-decoration: none;
 	display: inline-block;
@@ -122,7 +125,7 @@ body {
 }
 
 .back-button:hover {
-   background-color: #000000;
+   background-color: #6c5e2a;
    color: #e5e4e4;
    transition: background-color 0.2s ease;
 }
@@ -135,7 +138,7 @@ body {
 
 footer {
    display: block;
-   background-color: #000000;
+   background-color: #6c5e2a;
    width:100%;
    padding-top: 30px;
    padding-bottom: 30px;
@@ -145,7 +148,7 @@ footer {
 .copyright {
     position: relative;
     font-size: 13px;
-    color: #888686;
+    color: #e5e4e4;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
