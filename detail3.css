@@ -31,14 +31,20 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
+    border-radius: 30px;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
     max-height: 50vh;
-    border-radius: 30px;
+    border-radius: inherit;
     padding: 5px;
+    transition: transform 0.7s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
