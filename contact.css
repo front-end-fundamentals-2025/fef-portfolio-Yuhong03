@@ -138,23 +138,29 @@ body {
     display: inline-block;
 }
 
-.home-button {
+.button-container {
     position: fixed;
-    margin-top: 100px;
-    left:50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 100px;
+}
+
+.home-button, .projects-button {
     font-family: "Onest", serif;
     color: #ffffff;
     font-size: 20px;
+    font-weight: 350;
     text-align: center;
     border: 1px solid #ffffff;
     padding: 10px 20px;
     text-decoration: none;
 	display: inline-block;
     border-radius: 20px;
+    margin: 0 10px;
 }
 
-.home-button:hover {
+.home-button:hover, .projects-button:hover {
    background-color: #ffffff;
    color: #2ba68d;
    transition: background-color 0.2s ease;
