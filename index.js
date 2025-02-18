@@ -16,14 +16,22 @@ document.addEventListener("DOMContentLoaded", function() {
         if (name === "" || email === "") {
             alert("Please fill in all fields.");
         } else {
-            // store the data in local storage
-            localStorage.setItem("contactName", name);
-            localStorage.setItem("contactEmail", email);
+            // get the existing contacts from local storage (if it exists)
+            const contactKey = `contact_${Date.now()}`;
 
-            // optional alert or confirmation
+            // create a new contact object
+            const newContact = {
+                name: name,
+                email: email
+            };
+
+            // save the updated contacts array to local storage
+            localStorage.setItem(contactKey, JSON.stringify(newContact));
+
+            // confirmation prompt
             alert("Thank you for contacting, " + name + "!");
 
-            // optionally reset the form
+            // reset the form
             contactForm.reset();
         }
     } )
