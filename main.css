@@ -1,6 +1,9 @@
 body {
     margin:0;
     padding:0;
+    overflow: auto;
+    width: 100%;
+    min-height: 100%;
 } 
 
 .background img{
@@ -17,31 +20,36 @@ body {
     display:flex;
     justify-content: center;
     color: white;
-    font-size: 35px;
+    font-size: 2.2em;
+    font-weight: 300;
     top: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width:100%;
     z-index: 1;
-    transition: all 0.5s ease-in-out;
+    font-family: "Pathway Gothic One", serif;
+    transition: all 0.3s ease-in-out;
     animation-name: intro;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-delay: 1s;
 }
 
 @keyframes intro {
     0% {
-        transform: scale(1) rotate(0deg);
+        transform: scale(1);
         color: white;
+        letter-spacing: 0;
     }
     50% {
-        transform: scale(1.2) rotate(180deg);
+        transform: scale(1.2);
         color: #1567e2;
+        letter-spacing: 3px;
     }
     100% {
-        transform: scale(1.3) rotate(360deg);
+        transform: scale(1.2) scaleX(1.3);
         color: #0f38a9;
+        font-weight: 900;
+        letter-spacing: 0;
     }
 }
 
@@ -108,6 +116,7 @@ hr {
         height: 150px;
     }
     #intro {
+        font-size: 2em;
         justify-content: center;
         text-align: center;
     }
@@ -146,24 +155,28 @@ hr {
     width: 100%;
 }
 
-.projects-button, .contact-button {
+.home-button, .projects-button, .contact-button {
     color: #c1def7;
     font-size: 20px;
     font-family: "Onest", serif;
     text-align: center;
     border: 1px solid #c1def7;
-    padding: 10px 20px;
+    padding: 8px 18px;
     text-decoration: none;
 	display: inline-block;
     border-radius: 20px;
     margin: 0 10px;
-    font-weight: 350;
+    font-weight: 400;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
 }
 
 a:hover {
-    background-color: #ffffff;
-    color: #176ff3;
-    transition: background-color 0.2s ease;
+    transform: scale(1.1);
+    letter-spacing: 2px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(8, 112, 216);
+    font-weight: 600;
 }
 
 .copyright {
@@ -179,7 +192,7 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .projects-button,.contact-button {
+    .home-button, .projects-button,.contact-button {
         font-size: 16px;
         padding: 8px 16px;
     }
